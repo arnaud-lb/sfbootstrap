@@ -4,13 +4,15 @@ namespace Acme\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use FOS\UserBundle\Entity\User as BaseUser;
+
 /**
  * Acme\UserBundle\Entity\User
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Acme\UserBundle\Entity\UserRepository")
  */
-class User
+class User extends BaseUser
 {
     /**
      * @var integer $id
@@ -19,7 +21,7 @@ class User
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
 
     /**
