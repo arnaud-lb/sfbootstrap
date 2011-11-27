@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/")
-     * @Template()
+     * @Template(engine="haml")
      */
     public function indexAction()
     {

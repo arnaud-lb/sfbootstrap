@@ -2,7 +2,8 @@ Symfony standard + a few bundles
 
 Added bundles:
 
-- FOSUserBundle
+- [FOSUserBundle](https://github.com/FriendsOfSymfony/FOSUserBundle)
+- [MtHamlBundle](https://github.com/arnaud-lb/MtHamlBundle)
 
 Install:
 

@@ -1,0 +1,10 @@
+
+%h1 Hello!
+
+- if is_granted("IS_AUTHENTICATED_REMEMBERED")
+    %a(href=path('fos_user_profile_edit')) Profile |
+    %a(href=path('fos_user_security_logout')) Logout
+- else
+    %a(href=path('fos_user_registration_register')) Register |
+    %a(href=path('fos_user_security_login')) Login
+

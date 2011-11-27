@@ -11,7 +11,7 @@ framework:
     form:            true
     csrf_protection: true
     validation:      { enable_annotations: true }
-    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    templating:      { engines: ['haml', 'twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
     session:
         auto_start:     true
@@ -64,4 +64,6 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Acme\UserBundle\Entity\User
+
+mt_haml:
 
